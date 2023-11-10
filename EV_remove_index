@@ -1,0 +1,1 @@
+C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -psconsolefile "F:\EV\EVShell.psc1" -command "& {Get-EVIndexSnapshot | Where-Object { $_.CreatedDate -lt (Get-Date).AddDays(-10) } | Remove-EVIndexSnapshot -Confirm:$false}"
